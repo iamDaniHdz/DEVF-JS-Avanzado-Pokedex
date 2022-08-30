@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* HEADER & FOOTER */
+
+header, footer{
+    background-color: #be1313;
+    color: #fff;
+    text-align: center;
+}
+
+/* BODY */
+
+section#searchPokemon{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    background-image: url("assets/pokemon-in-the-wild.png");
+    background-size: contain;
+    height: 400px;
+    padding-bottom: 50px;
+}
+
+/* SEARCH */
+
+.search {
+    background: #DEDEDE;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    width: max-content;
+    height: 400px;
+    justify-content: center;
+    margin-inline: 0%;
+}
+
+form {
+    width: 200px;
+    margin: 20px auto;
+}
+
+input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    background-color: #55ab62;
+    border: 1px solid black;
+}
+
+.poke-card {
+    position: relative;
+    height: 250px;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #f1f2d3;
+    border: 1px solid black;
+}
+
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+    background: none;
+}
+
+.poke-img {
+    width: 180px;
+    border-radius: 50%;
+    background: none;
+}
+
+/* TYPES & ABILITIES */
+
+.types-card {
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #032d29;
+    border: 1px solid black;
+    height: 175px;
+    width: 200px;
+    display: grid;
+    align-items: center;
+}
+
+.types-card h1 {
+    color: #ceb909;
+    background: none;
+}
+
+
+.types-abilities-data {
+    border-radius: 10px;
+    display: flex;
+    margin-inline: 5%;
+    height: 422px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.types-abilities-data img {
+    width: 100px;
+    background: none;
+}
+
+.abilities-card {
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #032d29;
+    border: 1px solid black;
+    height: 175px;
+    width: 200px;
+    display: grid;
+    align-items: center;
+}
+
+.abilities-card h1 {
+    color: #ceb909;
+    background: none;
+}
+
+/* STATS */
+
+.stats-card {
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 500px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #032d29;
+    border: 1px solid black;
+    height: 400px;
+    width: 300px;
+    margin-inline: 0%;
+    display: grid;
+    align-items: center;
+
+}
+
+.stats-card h1 {
+    color: #ceb909;
+    background: none;
+}
+
+.stats-card img {
+    width: 100px;
+    background: none;
+}
+
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+    background: none;
+}
+
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.poke-abilities div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.poke-card-title, 
+.id-container,
+.poke-stats,
+.poke-abilities,
+.poke-types {
+    background: none;
+}
