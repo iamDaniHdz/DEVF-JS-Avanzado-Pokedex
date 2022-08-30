@@ -24,7 +24,7 @@ section#searchPokemon{
     display: flex;
     padding: 30px;
     justify-content: center;
-    height: 400px;
+    /* height: 400px; */
     padding-bottom: 50px;
 }
 
@@ -35,8 +35,8 @@ section#searchPokemon{
     padding: 10px;
     border-radius: 10px;
     display: block;
-    width: max-content;
-    height: 400px;
+    width: 250px;
+    height: 430px;
     justify-content: center;
     margin-inline: 0%;
 }
@@ -47,22 +47,22 @@ form {
 }
 
 input {
-    width: 100%;
+    /* width: 100%; */
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     position: relative;
     font-family: 'Roboto Mono', monospace;
-    max-width: 300px;
+    /* max-width: 300px; */
     border-radius: 4px;
     color: #000;
-    background-color: #55ab62;
+    background-color: #fff;
     border: 1px solid black;
 }
 
 .poke-card {
     position: relative;
-    height: 250px;
+    height: 320px;
     font-family: 'Roboto Mono', monospace;
     max-width: 300px;
     border-radius: 4px;
@@ -72,13 +72,17 @@ input {
     margin: 0 auto;
     background-color: #f1f2d3;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
 }
 
 .img-container {
     position: relative;
-    width: 180px;
+    width: 100px;
     margin: 10px auto;
-    background: none;
+    background: white;
+    border-radius: 100%;
 }
 
 .poke-img {
@@ -187,7 +191,7 @@ input {
     margin: 0 auto;
     background-color: #032d29;
     border: 1px solid black;
-    height: 400px;
+    height: 430px;
     width: 300px;
     margin-inline: 0%;
     display: grid;
