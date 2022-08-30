@@ -58,7 +58,6 @@ const renderPokemonData = data => {
     pokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
     pokeId.textContent = `Nº ${data.id}`;
-    // pokeWeight.textContent = `Weight: ${data.weight}`;
     renderPokemonTypes(types);
     renderPokemonStats(stats);
     renderPokemonAbilities(abilities);
@@ -119,10 +118,11 @@ const renderNotFound = () => {
     pokeImg.setAttribute('src', 'https://svgsilh.com/png-1024/1574006.png');
     pokeImg.style.background = 'none';
 
-    pokeTypes.innerHTML = '';
-    pokeStats.innerHTML = '';
-    pokeAbilities.textContent = '';
-    pokeWeight.innerHTML = '';
-
+    pokeTypes.innerHTML = `<div class="spinner-border text-light" role="status"> <span class="visually-hidden">Loading...</span></div>`;
+    pokeAbilities.innerHTML = `<div class="spinner-border text-light" role="status"> <span class="visually-hidden">Loading...</span></div>`;
+    pokeWeight.innerHTML = `<div class="spinner-border text-light" role="status"> <span class="visually-hidden">Loading...</span></div>`; 
+    pokeStats.innerHTML = `<div class="d-flex justify-content-center"><div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div></div>`;
     pokeId.textContent = 'Intenta nuevamente';
+
+    pokeCard.style.background = '#f1f2d3';
 }

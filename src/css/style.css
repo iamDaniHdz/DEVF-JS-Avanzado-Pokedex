@@ -3,6 +3,13 @@
     padding: 0px;
 }
 
+h1{
+    color: #ceb909;
+    background: none;
+    font-weight: normal;
+    font-size: larger;
+}
+
 /* HEADER & FOOTER */
 
 header, footer{
@@ -232,3 +239,5 @@ input {
 .poke-types {
     background: none;
 }
+
+/* FOOTER */

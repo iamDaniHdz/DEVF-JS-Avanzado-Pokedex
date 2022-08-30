@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="assets/pokeball.png" type="image/x-icon">
     <title>Pokedex</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -38,24 +41,42 @@
         <div class="types-abilities-data">
             <div id="data-poke-card" class="types-card">
                 <h1>Tipo:</h1>
-                <div id="data-poke-types" class="poke-types"></div>
+                <div id="data-poke-types" class="poke-types">
+                    <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
             </div>
 
             <div id="data-poke-card" class="abilities-card">
                 <h1>Habilidades:</h1>
-                <div id="data-poke-abilities" class="poke-abilities"></div>
+                <div id="data-poke-abilities" class="poke-abilities">
+                    <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
             </div>
 
             <div id="data-poke-card" class="weight-card">
                 <h1>Peso:</h1>
-                <div id="data-poke-weight" class="poke-weight"></div>
+                <div id="data-poke-weight" class="poke-weight">
+                    <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- show data - stats -->
         <div id="data-poke-card" class="stats-card">
             <h1>Estadisticas:</h1>
-            <div id="data-poke-stats" class="poke-stats"></div>
+            <div id="data-poke-stats" class="poke-stats">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -65,9 +86,7 @@
     </section>
 
     <!-- FOOTER - estilos pendientes -->
-    <footer>
-        <h3>[ footer ]</h3>
-    </footer>
+    <footer></footer>
 
     <script src="js/index.js" type="text/javascript" defer></script>
 </body>
