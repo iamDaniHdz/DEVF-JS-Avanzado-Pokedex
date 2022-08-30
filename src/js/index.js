@@ -8,6 +8,7 @@ const pokeWeight = document.getElementById('data-poke-weight');
 const pokeTypes = document.getElementById('data-poke-types');
 const pokeStats = document.getElementById('data-poke-stats');
 const pokeAbilities = document.getElementById('data-poke-abilities');
+const divSearch = document.getElementById('search');
 
 // colores a usar segun el tipo de pokemon
 const typeColors = {
@@ -51,6 +52,7 @@ const renderPokemonData = data => {
         types,
         abilities
     } = data;
+    const backgroundCard = data.types[0].type.name
 
     pokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
@@ -59,7 +61,9 @@ const renderPokemonData = data => {
     renderPokemonTypes(types);
     renderPokemonStats(stats);
     renderPokemonAbilities(abilities);
-    console.log(data);
+    // renderPokemonWeight(weights)
+    console.log(data); // eliminar despues del development
+    pokeCard.style.background = typeColors[backgroundCard];
 }
 
 // funcion para crear un div con los datos de TYPE en el html
@@ -108,6 +112,7 @@ const renderNotFound = () => {
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';
     pokeAbilities.textContent = '';
+    pokeWeight.innerHTML = '';
 
     pokeId.textContent = 'Intenta nuevamente';
 }

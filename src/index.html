@@ -20,7 +20,7 @@
 
     <section id="searchPokemon">
         <!-- search pokemon -->
-        <div class="search">
+        <div class="search" id="search">
             <form action="" onsubmit="searchPokemon(event)">
                 <input type="text" name="pokemon" placeholder="Escribe tu pokemon" autocomplete="off">
             </form>
@@ -45,6 +45,11 @@
             <div id="data-poke-card" class="abilities-card">
                 <h1>Habilidades:</h1>
                 <div id="data-poke-abilities" class="poke-abilities"></div>
+            </div>
+
+            <div id="data-poke-card" class="weight-card">
+                <h1>Peso:</h1>
+                <div id="data-poke-weight" class="poke-weight"></div>
             </div>
         </div>
 
