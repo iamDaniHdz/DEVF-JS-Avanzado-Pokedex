@@ -17,8 +17,6 @@ section#searchPokemon{
     display: flex;
     padding: 30px;
     justify-content: center;
-    background-image: url("assets/pokemon-in-the-wild.png");
-    background-size: contain;
     height: 400px;
     padding-bottom: 50px;
 }
@@ -144,6 +142,31 @@ input {
     background: none;
 }
 
+/* WEIGHT */
+
+.weight-card{
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 300px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #032d29;
+    border: 1px solid black;
+    height: 175px;
+    width: 200px;
+    display: grid;
+    align-items: center;
+}
+
+.weight-card h1 {
+    color: #ceb909;
+    background: none;
+}
+
 /* STATS */
 
 .stats-card {
@@ -191,6 +214,12 @@ input {
 }
 
 .poke-abilities div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.poke-weight div {
     padding: 5px;
     margin: 5px;
     border-radius: 25px;

@@ -50,18 +50,19 @@ const renderPokemonData = data => {
     const {
         stats,
         types,
-        abilities
+        abilities,
+        weight
     } = data;
     const backgroundCard = data.types[0].type.name
 
     pokeName.textContent = data.name;
     pokeImg.setAttribute('src', sprite);
     pokeId.textContent = `Nº ${data.id}`;
-    pokeWeight.textContent = `Weight: ${data.weight}`;
+    // pokeWeight.textContent = `Weight: ${data.weight}`;
     renderPokemonTypes(types);
     renderPokemonStats(stats);
     renderPokemonAbilities(abilities);
-    // renderPokemonWeight(weights)
+    renderPokemonWeight(weight)
     console.log(data); // eliminar despues del development
     pokeCard.style.background = typeColors[backgroundCard];
 }
@@ -90,6 +91,15 @@ const renderPokemonStats = stats => {
         statElement.appendChild(statElementAmount);
         pokeStats.appendChild(statElement);
     });
+}
+
+// funcion para crear un div con los datos de WEIGHT en el html
+const renderPokemonWeight = weight => {
+    pokeWeight.innerHTML = '';
+    const weightTextElement = document.createElement("div");
+    weightTextElement.style.background = typeColors.white;
+    weightTextElement.textContent = `${weight} KG`;
+    pokeWeight.appendChild(weightTextElement);
 }
 
 // funcion para crear un div con los datos de ABILITIES en el html
