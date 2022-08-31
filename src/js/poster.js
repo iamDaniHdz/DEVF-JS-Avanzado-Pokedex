@@ -44,18 +44,22 @@ const renderPokemon = (data) => {
                     nombre.classList.add("nombrePokemon")
                     separa.append(nombre);
 
-                    // crear parrafo con el TYPE del pokemon
-                    let typePokemonTitle = document.createElement("p")
-                    typePokemonTitle.innerHTML = `Tipo:`
+                    // crear div con el TYPE del pokemon
+                    const typePokemon = document.createElement("div");
+                    typePokemon.classList.add("d-flex", "align-items-center", "justify-content-evenly", "mb-3")
+
+                    const typePokemonTitle = document.createElement("div");
+                    const typePokemonName = document.createElement("div");
+                    typePokemonTitle.textContent = "Tipo:"
                     typePokemonTitle.classList.add("typePokemonTitle")
-                    separa.append(typePokemonTitle)
 
-                    let typePokemon = document.createElement("p")
-                    typePokemon.innerHTML = `${pokemon.types[0].type.name}`
-                    typePokemon.classList.add("typePokemon")
-                    typePokemon.style.background = typeColors[backgroundCard]
+                    typePokemonName.textContent = pokemon.types[0].type.name
+                    typePokemonName.classList.add("typePokemon", "text-white")
+                    typePokemonName.style.background = typeColors[backgroundCard]
 
-                    separa.append(typePokemon)
+                    typePokemon.appendChild(typePokemonTitle);
+                    typePokemon.appendChild(typePokemonName);
+                    separa.appendChild(typePokemon);
 
                     // crear parrafo con las ABILITIES del pokemon
                     let abilitiesPokemon = document.createElement("p")
@@ -71,16 +75,22 @@ const renderPokemon = (data) => {
                     separa.append(abilityPokemon)
                     })
 
-                    // crear parrafo con el WEIGHT del pokemon
-                    let weightPokemonTitle = document.createElement("p")
-                    weightPokemonTitle.innerHTML = "Peso:"
-                    weightPokemonTitle.classList.add("weightPokemonTitle")
-                    separa.append(weightPokemonTitle)
+                    // crear div con el WEIGHT del pokemo
+                    const weightPokemon = document.createElement("div");
+                    weightPokemon.classList.add("d-flex", "align-items-center", "justify-content-evenly")
 
-                    let weightPokemon = document.createElement("p")
-                    weightPokemon.innerHTML = `${pokemon.weight} KG`
-                    weightPokemon.classList.add("weightPokemon")
-                    separa.append(weightPokemon)
+                    const weightPokemonTitle = document.createElement("div");
+                    const weightPokemonAmount = document.createElement("div");
+
+                    weightPokemonTitle.textContent = "Peso:"
+                    weightPokemonTitle.classList.add("weightPokemonTitle")
+
+                    weightPokemonAmount.innerHTML = `${pokemon.weight} KG`
+                    weightPokemonAmount.classList.add("weightPokemon")
+
+                    weightPokemon.appendChild(weightPokemonTitle);
+                    weightPokemon.appendChild(weightPokemonAmount);
+                    separa.appendChild(weightPokemon);
                         
                 // FIN DE LA MODIFICACION
 
