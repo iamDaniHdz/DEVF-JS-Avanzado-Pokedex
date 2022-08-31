@@ -16,7 +16,7 @@ const renderPokemon = (data) => {
             .then((response) => response.json())
             .then((pokemon) => {
                 let separa = document.createElement("div");
-                separa.classList.add("col-lg-2", "col-md-3", "col-sm-5","img-responsive", "text-center", "poke-card")
+                separa.classList.add("col-lg-2", "col-md-3", "col-sm-5","img-responsive", "text-center", "poke-card") // aqui se pueden añadir las clases de bootstrap para el css y el resposive
 
                 // cambiar el color de la card segun el type
                 const backgroundCard = pokemon.types[0].type.name
