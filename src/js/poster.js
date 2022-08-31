@@ -21,10 +21,46 @@ const renderPokemon = (data) => {
                 separa.append(img);
                 //document.querySelector("#logo").append(img);
                 //para crear un parrafo ( el nombre del pokemon)
-                let nombre = document.createElement("p")
-                nombre.innerHTML = pokemon.name;
                 //document.querySelector("#logo").append(nombre);
-                separa.append(nombre);
+               
+                // INICIO DE LA MODIFICACION
+
+                    // crear parrafo con el ID del pokemon
+                    let idPokemon = document.createElement("p")
+                    idPokemon.innerHTML = `#${pokemon.id}`
+                    separa.append(idPokemon)
+
+                    // crear parrafo con el NAME del pokemon
+                    let nombre = document.createElement("p")
+                    nombre.innerHTML = pokemon.name;
+                    separa.append(nombre);
+
+                    // crear parrafo con el TYPE del pokemon
+                    let typePokemon = document.createElement("p")
+                    typePokemon.innerHTML = `Tipo: ${pokemon.types[0].type.name}`
+                    separa.append(typePokemon)
+    
+                    // crear parrafo con las ABILITIES del pokemon
+                    let abilitiesPokemon = document.createElement("p")
+                    abilitiesPokemon.innerHTML = "Habilidades:"
+                    separa.append(abilitiesPokemon)
+
+                    // iterarlo
+                    let abilitiesPokemon1 = document.createElement("p")
+                    abilitiesPokemon1.innerHTML = `- ${pokemon.abilities[0].ability.name}`
+                    separa.append(abilitiesPokemon1)
+
+                    let abilitiesPokemon2 = document.createElement("p")
+                    abilitiesPokemon2.innerHTML = `- ${pokemon.abilities[1].ability.name}`
+                    separa.append(abilitiesPokemon2) 
+
+                    // crear parrafo con el WEIGHT del pokemon
+                    let weightPokemon = document.createElement("p")
+                    weightPokemon.innerHTML = `Peso: ${pokemon.weight} KG`
+                    separa.append(weightPokemon)
+                        
+                // FIN DE LA MODIFICACION
+
                 document.querySelector("#logo").append(separa);
                 console.log(pokemon.sprites.front_default)
                 let types = [];
