@@ -22,7 +22,7 @@ const renderPokemon = (data) => {
                 //document.querySelector("#logo").append(img);
                 //para crear un parrafo ( el nombre del pokemon)
                 //document.querySelector("#logo").append(nombre);
-               
+
                 // INICIO DE LA MODIFICACION
 
                     // crear parrafo con el ID del pokemon
@@ -32,12 +32,16 @@ const renderPokemon = (data) => {
 
                     // crear parrafo con el NAME del pokemon
                     let nombre = document.createElement("p")
-                    nombre.innerHTML = pokemon.name;
+                    nombre.innerHTML = pokemon.name
                     separa.append(nombre);
 
                     // crear parrafo con el TYPE del pokemon
+                    let typePokemonTitle = document.createElement("p")
+                    typePokemonTitle.innerHTML = `Tipo:`
+                    separa.append(typePokemonTitle)
+
                     let typePokemon = document.createElement("p")
-                    typePokemon.innerHTML = `Tipo: ${pokemon.types[0].type.name}`
+                    typePokemon.innerHTML = `${pokemon.types[0].type.name}`
                     separa.append(typePokemon)
     
                     // crear parrafo con las ABILITIES del pokemon
@@ -45,18 +49,20 @@ const renderPokemon = (data) => {
                     abilitiesPokemon.innerHTML = "Habilidades:"
                     separa.append(abilitiesPokemon)
 
-                    // iterarlo
-                    let abilitiesPokemon1 = document.createElement("p")
-                    abilitiesPokemon1.innerHTML = `- ${pokemon.abilities[0].ability.name}`
-                    separa.append(abilitiesPokemon1)
-
-                    let abilitiesPokemon2 = document.createElement("p")
-                    abilitiesPokemon2.innerHTML = `- ${pokemon.abilities[1].ability.name}`
-                    separa.append(abilitiesPokemon2) 
+                    let abilities = pokemon.abilities
+                    abilities.forEach(ability => {
+                    let abilityPokemon = document.createElement("p")
+                    abilityPokemon.innerHTML = `- ${ability.ability.name}`
+                    separa.append(abilityPokemon)
+                    })
 
                     // crear parrafo con el WEIGHT del pokemon
+                    let weightPokemonTitle = document.createElement("p")
+                    weightPokemonTitle.innerHTML = "Peso:"
+                    separa.append(weightPokemonTitle)
+
                     let weightPokemon = document.createElement("p")
-                    weightPokemon.innerHTML = `Peso: ${pokemon.weight} KG`
+                    weightPokemon.innerHTML = `${pokemon.weight} KG`
                     separa.append(weightPokemon)
                         
                 // FIN DE LA MODIFICACION
