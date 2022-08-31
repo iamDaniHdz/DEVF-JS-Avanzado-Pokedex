@@ -1,5 +1,7 @@
 let pokemons_array = []; //primer paso para el array
 //poster
+
+console.log(typeColors);
 fetch(`${URL}/pokemon?limit=151`) //para poner limites
     .then((response) => response.json())
     .then(data => {
@@ -14,7 +16,12 @@ const renderPokemon = (data) => {
             .then((response) => response.json())
             .then((pokemon) => {
                 let separa = document.createElement("div");
-                separa.classList.add("col-2", "img-responsive", "text-center", "poke-card")
+                separa.classList.add("col-lg-2", "col-md-3", "col-sm-5","img-responsive", "text-center", "poke-card")
+
+                // cambiar el color de la card segun el type
+                const backgroundCard = pokemon.types[0].type.name
+                separa.style.background = typeColorsOpacity[backgroundCard]
+
                 let img = document.createElement("img");
                 img.setAttribute("src", pokemon.sprites.front_default);
                 img.setAttribute("alt", pokemon.name);
@@ -46,8 +53,10 @@ const renderPokemon = (data) => {
                     let typePokemon = document.createElement("p")
                     typePokemon.innerHTML = `${pokemon.types[0].type.name}`
                     typePokemon.classList.add("typePokemon")
+                    typePokemon.style.background = typeColors[backgroundCard]
+
                     separa.append(typePokemon)
-    
+
                     // crear parrafo con las ABILITIES del pokemon
                     let abilitiesPokemon = document.createElement("p")
                     abilitiesPokemon.innerHTML = "Habilidades:"
@@ -57,7 +66,7 @@ const renderPokemon = (data) => {
                     let abilities = pokemon.abilities
                     abilities.forEach(ability => {
                     let abilityPokemon = document.createElement("p")
-                    abilityPokemon.innerHTML = `- ${ability.ability.name}`
+                    abilityPokemon.innerHTML = `${ability.ability.name}`
                     abilityPokemon.classList.add("abilityPokemon")
                     separa.append(abilityPokemon)
                     })

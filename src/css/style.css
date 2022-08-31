@@ -4,8 +4,8 @@
 }
 
 .poke-card{
-    background-color: aquamarine;
-    margin: 10px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 30%);
+    margin: 20px;
     padding: 15px;
     border-radius: 10px;
 }
@@ -13,58 +13,12 @@
 .poke-card img{
     background-color: white;
     border-radius: 100%;
-    margin: 20px;
+    margin: 10px 0 20px 0;
 }
 
-.idPokemon {
-    background-color: white;
-    border-radius: 5px;
-    margin-left:  15px;
-    margin-right:  15px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nombrePokemon{
-    font-weight: bold;
-}
-
-.typePokemonTitle{
-    font-weight: bold;
-}
-
-.typePokemon{
-    background-color: white;
-    border-radius: 5px;
-    margin-left:  15px;
-    margin-right:  15px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.abilitiesPokemonTitle{
-    font-weight: bold;
-}
-
-.abilityPokemon{
-    background-color: white;
-    border-radius: 5px;
-    margin-left:  15px;
-    margin-right:  15px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.weightPokemonTitle{
-    font-weight: bold;
-}
-
+.idPokemon,
+.typePokemon,
+.abilityPokemon,
 .weightPokemon{
     background-color: white;
     border-radius: 5px;
@@ -75,3 +29,57 @@
     align-items: center;
     justify-content: center;
 }
+
+.typePokemon{
+    color: white;
+}
+
+.nombrePokemon{
+    font-weight: bold;
+}
+
+.typePokemonTitle{
+    font-weight: bold;
+}
+
+/* .typePokemon{
+    background-color: white;
+    border-radius: 5px;
+    margin-left:  15px;
+    margin-right:  15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.abilitiesPokemonTitle{
+    font-weight: bold;
+}
+
+/* .abilityPokemon,
+.weightPokemon{
+    background-color: white;
+    border-radius: 5px;
+    margin-left:  15px;
+    margin-right:  15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.weightPokemonTitle{
+    font-weight: bold;
+}
+
+/* .weightPokemon{
+    background-color: white;
+    border-radius: 5px;
+    margin-left:  15px;
+    margin-right:  15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
