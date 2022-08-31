@@ -14,7 +14,7 @@ const renderPokemon = (data) => {
             .then((response) => response.json())
             .then((pokemon) => {
                 let separa = document.createElement("div");
-                separa.classList.add("col-4", "img-responsive", "text-center")
+                separa.classList.add("col-2", "img-responsive", "text-center", "poke-card")
                 let img = document.createElement("img");
                 img.setAttribute("src", pokemon.sprites.front_default);
                 img.setAttribute("alt", pokemon.name);
@@ -28,41 +28,49 @@ const renderPokemon = (data) => {
                     // crear parrafo con el ID del pokemon
                     let idPokemon = document.createElement("p")
                     idPokemon.innerHTML = `#${pokemon.id}`
+                    idPokemon.classList.add("idPokemon")
                     separa.append(idPokemon)
 
                     // crear parrafo con el NAME del pokemon
                     let nombre = document.createElement("p")
                     nombre.innerHTML = pokemon.name
+                    nombre.classList.add("nombrePokemon")
                     separa.append(nombre);
 
                     // crear parrafo con el TYPE del pokemon
                     let typePokemonTitle = document.createElement("p")
                     typePokemonTitle.innerHTML = `Tipo:`
+                    typePokemonTitle.classList.add("typePokemonTitle")
                     separa.append(typePokemonTitle)
 
                     let typePokemon = document.createElement("p")
                     typePokemon.innerHTML = `${pokemon.types[0].type.name}`
+                    typePokemon.classList.add("typePokemon")
                     separa.append(typePokemon)
     
                     // crear parrafo con las ABILITIES del pokemon
                     let abilitiesPokemon = document.createElement("p")
                     abilitiesPokemon.innerHTML = "Habilidades:"
+                    abilitiesPokemon.classList.add("abilitiesPokemonTitle")
                     separa.append(abilitiesPokemon)
 
                     let abilities = pokemon.abilities
                     abilities.forEach(ability => {
                     let abilityPokemon = document.createElement("p")
                     abilityPokemon.innerHTML = `- ${ability.ability.name}`
+                    abilityPokemon.classList.add("abilityPokemon")
                     separa.append(abilityPokemon)
                     })
 
                     // crear parrafo con el WEIGHT del pokemon
                     let weightPokemonTitle = document.createElement("p")
                     weightPokemonTitle.innerHTML = "Peso:"
+                    weightPokemonTitle.classList.add("weightPokemonTitle")
                     separa.append(weightPokemonTitle)
 
                     let weightPokemon = document.createElement("p")
                     weightPokemon.innerHTML = `${pokemon.weight} KG`
+                    weightPokemon.classList.add("weightPokemon")
                     separa.append(weightPokemon)
                         
                 // FIN DE LA MODIFICACION
