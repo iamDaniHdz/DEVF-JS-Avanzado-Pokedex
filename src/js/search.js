@@ -38,8 +38,4 @@ frmBuscar.addEventListener("submit", (event) => {
     .then((response) => response.json())
     .then((data) => renderResults(data.results));*/
     console.log(pokeName)
-    if (containerCard.length === 0) {
-        alert("No hubo resultado");
-        window.location.reload()
-    }
 });
