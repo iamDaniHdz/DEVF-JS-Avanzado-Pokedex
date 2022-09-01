@@ -1,13 +1,13 @@
 # Proyecto del módulo: JavaScript Avanzado
 
 ## Pokédex
-Realizar la construcciòn de una web app, que simule una pokedex (directorio de pokemon). Para realizarlo, necesitarà consumir la API de pokemon, del sitio https://pokeapi.co/
+Realizar la construcción de una web app, que simule una pokedex (directorio de pokemon). Para realizarlo, necesitará consumir la API de pokemon, del sitio https://pokeapi.co/
 
 ### Tecnologias utilizadas:
 <img src="https://img.shields.io/badge/HTML5-ff9054?style=for-the-badge&logo=html5&logoColor=black"> <img src="https://img.shields.io/badge/CSS-659fff?&style=for-the-badge&logo=css3&logoColor=black"> <img src="https://img.shields.io/badge/JavaScript-fbe257?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/Bootstrap-9c56f7?style=for-the-badge&logo=bootstrap&logoColor=black"> <img src="https://img.shields.io/badge/github pages-282828?style=for-the-badge&logo=github&logoColor=white">
 
 ### Requerimientos:
-+ Interfaz gràfica de usuario responsive _(responsive: media queries, flexbox, css grid)_
++ Interfaz gráfica de usuario responsive _(responsive: media queries, flexbox, css grid)_
 + Consumir y presentar en el DOM, al menos los siguientes datos de la API:
     + id
     + imagen
@@ -36,11 +36,16 @@ __En caso de no seleccionar la pokeapi, deberas entregar algo muy parecido, cons
 | NASA | https://api.nasa.gov/ |
 
 #### Apps de productividad recomendadas:
-- Trello (organizacion). Ejemplo de tablero: Todo, in progress, in review, done
-- Figma (diseño ui/ux)
+- [Trello][trello] (organizacion). Ejemplo de tablero: Todo, in progress, in review, done
+
+[trello]: https://trello.com/es
+
+- [Figma][figma] (diseño ui / ux)
+
+[figma]: https://www.figma.com/
 
 
-### Buenas prácticas:
+### 💡 Buenas prácticas:
 #### Consejos para trabajar con git:
 - No tocar master/main, más que para configurar el proyecto, crear las ramas y subir el proyecto completo
 - Cada integrante trabaja en su propia rama y avisa a dev para hacer merge ò hace pull request desde su rama a dev y dev,
@@ -58,6 +63,12 @@ aprueba y mezcla los cambios.
 Página web desplegada: [Pokédex][pokedex]
 
 [pokedex]: https://iamdanihdz.github.io/DEVF-JS-Avanzado-Pokedex/src/
+
+<img src="https://github.com/iamDaniHdz/DEVF-JS-Avanzado-Pokedex/blob/master/assets/index.png">
+
+<img src="https://github.com/iamDaniHdz/DEVF-JS-Avanzado-Pokedex/blob/master/assets/pokedex.png">
+
+<img src="https://github.com/iamDaniHdz/DEVF-JS-Avanzado-Pokedex/blob/master/assets/search.png">
 
 [Regresar al DEVF-JS-Avanzado][repositorio]
 
