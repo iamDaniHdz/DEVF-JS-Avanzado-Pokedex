@@ -23,9 +23,32 @@
     </header>
 
     <section id="filterPokemon">
+        <a class="ab" href="#" id="abecedario">A-Z</a>
+        <li>
+          <form class="d-flex" role="search" id="search">
+            <input
+              class="form-control form-control-sm me-2"
+              type="search"
+              autocomplete="off"
+              placeholder="Busca un Pokemon.."
+              aria-label="Search"
+              name="pokeName"/>
+            <button
+            class="btn btn-warning btn-sm" type="submit">
+              <i class="bi bi-search"></i>
+          </button>  
+          </form>
+        </li>
+
+        <select name="types" id="types">
+          <option disabled selected>Tipos</option >
+        </select>
         <div class="covers-containers row d-flex justify-content-center m-5 p-4" id="logo"> </div>
         <script src="js/main.js"></script>
-        <script defer src="js/poster.js"></script>    </section>
+        <script defer src="js/poster.js"></script>    
+        <script src="js/abecedario.js"></script>
+        <script src="js/select.js"></script>
+        <script src="js/search.js"></script>
     </section>
    
     <!-- FOOTER - estilos pendientes -->
