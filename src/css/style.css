@@ -3,7 +3,9 @@
     padding: 0px;
 }
 
-h1{
+
+
+h1 {
     color: #ceb909;
     background: none;
     font-weight: normal;
@@ -12,15 +14,15 @@ h1{
 
 /* HEADER & FOOTER */
 
-header, footer{
+/* header,
+footer {
     background-color: #be1313;
     color: #fff;
     text-align: center;
-}
+} */
 
 /* BODY */
-
-section#searchPokemon{
+section#searchPokemon {
     display: flex;
     padding: 30px;
     justify-content: center;
@@ -155,7 +157,7 @@ input {
 
 /* WEIGHT */
 
-.weight-card{
+.weight-card {
     height: fit-content;
     font-family: 'Roboto Mono', monospace;
     max-width: 300px;
@@ -236,7 +238,7 @@ input {
     border-radius: 25px;
 }
 
-.poke-card-title, 
+.poke-card-title,
 .id-container,
 .poke-stats,
 .poke-abilities,
@@ -244,6 +246,3 @@ input {
     background: none;
 }
 
-
-
-/* FOOTER */
