@@ -84,39 +84,40 @@
       <div class="container-fluid">
 
         <!-- btn responsive -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <span>
+            <i class="bi bi-funnel"></i>
+          </span>
+        </button> -->
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
-
-            <!-- A-Z -->
-            <!-- <li class="nav-item me-3 w-100">
-              <button class="btn btn-secondary btn-sm">
-                <a class="nav-link active ab" aria-current="page" href="#" id="abecedario">A-Z</a>
-              </button>
-            </li> -->
 
             <!-- types -->
             <select name="types" id="types" class="form-select">
               <option disabled selected>Tipos</option>
             </select>
-            <!-- </div> -->
+
           </ul>
 
           <!-- search -->
           <form class="d-flex align-items-center" role="search" id="search">
             <input class="form-control me-2" type="search" placeholder="Buscar un pokemon" aria-label="Search"
               name="pokeName" autocomplete="off">
-        
-              <button class="btn btn-warning me-2" type="submit">
+
+            <button class="btn btn-warning me-2" type="submit">
               <i class="bi bi-search"></i>
             </button>
-        
-            <button class="btn btn-secondary w-25" type="submit" id="abecedario">
-              A-Z
+
+            <button class="btn btn-secondary me-2 w-25" type="submit" id="abecedario">
+              A - Z 
+            </button>
+
+            <button class="btn btn-danger" type="submit" id="abecedario">
+              <a href="" class="text-light">
+                <i class="bi bi-trash3"></i>
+              </a>
             </button>
           </form>
         </div>
