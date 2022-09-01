@@ -1,6 +1,10 @@
 .breakpoint {
-    max-width: 25%;
+    max-width: 15%;
+}
 
+.offcanvas.offcanvas-end{
+    width: 200px;
+    background-color: #ff4040 !important;
 }
 
 @media only screen and (min-width: 400px) and (max-width: 699px) {
