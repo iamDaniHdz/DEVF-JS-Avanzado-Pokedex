@@ -280,7 +280,7 @@
 
 /* FOOTER */
 .footer {
-
+    font-weight: lighter;
     background: #5a5a5a;
     color: white;
 }
