@@ -1,0 +1,319 @@
+.breakpoint {
+    max-width: 15%;
+}
+
+.offcanvas.offcanvas-end {
+    width: 200px;
+    background-color: #c42b22 !important;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 699px) {
+    breakpoint {
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 760px) {
+    breakpoint {
+        max-width: 24%;
+    }
+}
+
+.breakpoint-search {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+    .for {
+        width: 150px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .b-ser {
+        width: 200px !important;
+        height: 360px !important;
+    }
+
+    .bim {
+        margin-top: 25px !important;
+    }
+
+    .b-b {
+        max-height: 18px !important;
+    }
+
+    .b-div {
+        max-width: 100%;
+        height: 200px !important;
+    }
+
+    .b-in {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .b-bo {
+        margin-top: 10px;
+    }
+
+    .b-ty {
+        height: 360px !important;
+    }
+
+    .b-card {
+        width: 130px !important;
+        font-size: 12px;
+        margin-inline: 1% !important;
+    }
+
+    .b-st {
+        /* width: 150px !important; */
+        height: 360px !important;
+        font-size: 12px;
+    }
+
+    .b-info {
+        font-size: 12px;
+    }
+
+    .b-datapk {
+        height: 90px !important;
+    }
+
+    .ms-2 {
+        margin-left: 0 !important;
+    }
+
+    .poke-types,
+    .abilities-card,
+    .weight-card {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 699px) {
+    .b-sec {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .for {
+        width: 120px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .b-ser {
+        width: 220px !important;
+        height: 350px !important;
+        margin-bottom: 20px;
+    }
+
+    .bim {
+        margin-top: 25px !important;
+    }
+
+    .b-b {
+        max-height: 18px !important;
+    }
+
+    .b-div {
+        max-width: 100%;
+        height: 210px !important;
+    }
+
+    .b-in {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .b-bo {
+        margin-top: 10px;
+    }
+
+    .b-ty {
+        height: 220px !important;
+    }
+
+    .b-card {
+        width: 220px !important;
+        font-size: 12px;
+        margin-inline: 1% !important;
+    }
+
+    .b-st {
+        margin-top: 150px !important;
+        width: 220px !important;
+        height: 320px !important;
+        font-size: 12px !important;
+    }
+
+    .b-info {
+        font-size: 12px !important;
+    }
+
+    .b-datapk {
+        height: 90px !important;
+    }
+
+    .ms-2 {
+        margin-left: 0 !important;
+    }
+
+    .poke-types,
+    .abilities-card,
+    .weight-card {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+    .b-sec {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+
+    }
+
+    .for {
+        width: 120px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .b-ser {
+        width: 190px !important;
+        height: 350px !important;
+        margin-bottom: 20px;
+    }
+
+    .bim {
+        margin-top: 25px !important;
+    }
+
+    .b-b {
+        max-height: 18px !important;
+    }
+
+    .b-div {
+        max-width: 100%;
+        height: 210px !important;
+    }
+
+    .b-in {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    .b-bo {
+        margin-top: 10px;
+    }
+
+    .b-ty {
+        height: 220px !important;
+    }
+
+    .b-card {
+        width: 190px !important;
+        font-size: 12px;
+        margin-inline: 1% !important;
+    }
+
+    .b-st {
+        margin-top: 150px !important;
+        width: 190px !important;
+        height: 320px !important;
+        font-size: 12px !important;
+    }
+
+    .b-info {
+        font-size: 12px !important;
+    }
+
+    .b-datapk {
+        height: 90px !important;
+    }
+
+    .b-nof {
+        font-size: 12px;
+
+    }
+
+    .b-nof2 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .ms-2 {
+        margin-left: 0 !important;
+    }
+
+    .poke-types,
+    .abilities-card,
+    .weight-card {
+        font-size: 10px;
+    }
+}
+
+/* HEADER */
+
+.im {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.color {
+    background-color: #c42b22 !important;
+}
+
+/* FOOTER */
+.footer {
+    font-weight: lighter;
+    background: #5a5a5a;
+    color: white;
+}
+
+.links ul {
+    font-family: "Roboto";
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.links li a {
+    font-family: "Roboto";
+    color: white;
+    transition: color .2s;
+    text-decoration: none;
+    color: #b9c6d6;
+}
+
+.about i {
+    font-size: 14px;
+}
+
+.about a {
+    font-family: "Roboto";
+    color: white;
+    transition: color .2s;
+}
+
+.location i {
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.copyright p {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
