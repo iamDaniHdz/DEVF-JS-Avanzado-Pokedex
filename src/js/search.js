@@ -1,14 +1,14 @@
-const frmBuscar =document.querySelector("#search");
-const content =document.querySelector("#content");
+const frmBuscar = document.querySelector("#search");
+const content = document.querySelector("#content");
+const containerCard = document.getElementsByClassName("poke-card")
+const renderResults = (results) => {
+    content.innerHTML = "";
 
-const renderResults=(results) =>{
-content.innerHTML="";
+    let block = document.createElement("div");
+    block.classList.add("row", "col-12", "m-0");
+    block.setAttribute("id", "categories-group");
 
-let block =document.createElement("div");
-block.classList.add("row", "col-12" , "m-0");
-block.setAttribute("id" , "categories-group");
-
-content.appendChild(block);
+    content.appendChild(block);
 }
 /*
 results.forEach(pokemon => { aqui tengo duda esta bien el pokemon?
@@ -22,18 +22,24 @@ block.insertAdjacentElement(
 `);
 });
 };*/
-frmBuscar.addEventListener("submit", (event)=> {
-event.preventDefault();
+frmBuscar.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-const{pokeName} =event.target;
-let nuevos= pokemons_array.filter((pokemon) => {
-    return pokemon.name.toLowerCase().includes(pokeName.value.toLowerCase())
- })
-  renderPokemon(nuevos);
+    const {
+        pokeName
+    } = event.target;
+    let nuevos = pokemons_array.filter((pokemon) => {
+        return pokemon.name.toLowerCase().includes(pokeName.value.toLowerCase())
+    })
+    renderPokemon(nuevos);
 
-/*fetch(`${URL}/type/`)  //no se cual es  la url para hacer la busqueda ejemplo //search/multi?api_key=
+    /*fetch(`${URL}/type/`)  //no se cual es  la url para hacer la busqueda ejemplo //search/multi?api_key=
 
-.then((response) => response.json())
-.then((data) => renderResults(data.results));*/
-console.log(pokeName)
+    .then((response) => response.json())
+    .then((data) => renderResults(data.results));*/
+    console.log(pokeName)
+    if (containerCard.length === 0) {
+        alert("No hubo resultado");
+        window.location.reload()
+    }
 });
