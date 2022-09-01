@@ -2,7 +2,7 @@
     max-width: 15%;
 }
 
-.offcanvas.offcanvas-end{
+.offcanvas.offcanvas-end {
     width: 200px;
     background-color: #c42b22 !important;
 }
@@ -81,8 +81,8 @@
     .b-datapk {
         height: 90px !important;
     }
-    
-    .ms-2{
+
+    .ms-2 {
         margin-left: 0 !important;
     }
 
@@ -92,7 +92,6 @@
         font-size: 10px;
     }
 }
-
 
 @media only screen and (min-width: 400px) and (max-width: 699px) {
     .b-sec {
@@ -164,7 +163,7 @@
         height: 90px !important;
     }
 
-    .ms-2{
+    .ms-2 {
         margin-left: 0 !important;
     }
 
@@ -255,7 +254,7 @@
         margin-bottom: 20px;
     }
 
-    .ms-2{
+    .ms-2 {
         margin-left: 0 !important;
     }
 

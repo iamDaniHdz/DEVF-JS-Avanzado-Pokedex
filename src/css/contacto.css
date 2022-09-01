@@ -5,13 +5,10 @@
     font-family: sans-serif;
 }
 
-
-
 .tarjeta {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 100vh; */
     background-color: #f7eeeefe;
 }
 
@@ -19,7 +16,6 @@
     background-color: #f7eeeefe;
     text-align: center;
 }
-
 
 .logo {
     display: flex;
@@ -30,9 +26,6 @@
 
 }
 
-
-
-
 .card {
     position: relative;
     width: 250px;
@@ -42,7 +35,6 @@
     margin: 40px;
 
 }
-
 
 .card .content {
     position: relative;
@@ -59,7 +51,6 @@
     justify-content: space-around;
 }
 
-
 .card .content .img img {
     position: relative;
     width: 150px;
@@ -68,7 +59,6 @@
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-
 
 .card .content span {
     position: absolute;
@@ -81,22 +71,17 @@
 
 }
 
-
-
 .card .content h4 {
     font-size: 18px;
     color: #1a1919;
     margin-bottom: 5px;
 }
 
-
 .card .content p {
     font-size: 13px;
     color: #1a1919;
     margin-bottom: 10px;
 }
-
-
 
 .card .links {
     position: absolute;

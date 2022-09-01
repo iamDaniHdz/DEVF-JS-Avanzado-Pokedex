@@ -3,8 +3,6 @@
     padding: 0px;
 }
 
-
-
 h1 {
     color: #ceb909;
     background: none;
@@ -12,16 +10,8 @@ h1 {
     font-size: larger;
 }
 
-/* HEADER & FOOTER */
-
-/* header,
-footer {
-    background-color: #be1313;
-    color: #fff;
-    text-align: center;
-} */
-
 /* BODY */
+
 section#searchPokemon {
     display: flex;
     padding: 30px;
@@ -49,13 +39,11 @@ form {
 }
 
 input {
-    /* width: 100%; */
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     position: relative;
     font-family: 'Roboto Mono', monospace;
-    /* max-width: 300px; */
     border-radius: 4px;
     color: #000;
     background-color: #fff;
@@ -116,7 +104,6 @@ input {
     color: #ceb909;
     background: none;
 }
-
 
 .types-abilities-data {
     border-radius: 10px;
