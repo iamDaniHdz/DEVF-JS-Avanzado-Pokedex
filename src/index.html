@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/769px-Pokebola-pokeball-png-0.png"
+        type="image/x-icon">
     <title>Pokedex</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <!-- CSS only -->
@@ -25,59 +27,59 @@
     <header class="d-flex">
 
         <nav class="navbar navbar-dark navbar-expand-lg pb-3 d-flex color">
-    
-          <div class="container-fluid d-flex flex-column">
-    
-            <div class="d-flex w-100 align-items-center">
-    
-              <a class="navbar-brand" href="">
-                <img
-                  loading="lazy"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
-                  alt="" class="breakpoint im" width="200px">
-              </a>
-    
-              <button class="navbar-toggler btn p-1 ms-2" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-    
+
+            <div class="container-fluid d-flex flex-column">
+
+                <div class="d-flex w-100 align-items-center">
+
+                    <a class="navbar-brand" href="">
+                        <img loading="lazy"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+                            alt="" class="breakpoint im" width="200px">
+                    </a>
+
+                    <button class="navbar-toggler btn p-1 ms-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+
+                <!-- Offcanvas -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg">
+
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start d-flex flex-wrap flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Pokedex</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="search.html" class="nav-link">Filtrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contacto.html" class="nav-link">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://pokeapi.co/" target="_blank" class="nav-link">PokeApi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.youtube.com/c/pokemon" target="_blank" class="nav-link">Youtube</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://es.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank"
+                                    class="nav-link">Wikipedia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-    
-            <!-- Offcanvas -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg">
-    
-              <div class="offcanvas-header">
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                  aria-label="Close"></button>
-              </div>
-    
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-start d-flex flex-wrap flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a href="index.html" class="nav-link">Pokedex</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="search.html" class="nav-link">Filtrar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="contacto.html" class="nav-link">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="https://pokeapi.co/" target="_blank" class="nav-link">PokeApi</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="https://www.youtube.com/c/pokemon" target="_blank" class="nav-link">Youtube</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="https://es.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank" class="nav-link">Wikipedia</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </nav>
-      </header>
+    </header>
 
     <section id="searchPokemon" class="b-sec">
         <!-- search pokemon -->
@@ -145,8 +147,7 @@
         <!-- section para mostrar cards de x cantidad de pokemones segun el filtro aplicado -->
     </section>
 
-    <!-- FOOTER - estilos pendientes -->
-
+    <!-- FOOTER  -->
     <footer>
         <div class="mt-2 pt-3 footer">
             <div class="container">
@@ -158,19 +159,28 @@
                     <div class="col-lg-3 col-xs-12 links">
                         <h5 class="mt-lg-0 mt-sm-3">Links</h5>
                         <ul class="m-0 p-0">
-                            <li><i class="bi bi-github"></i> <a href="https://github.com/iamDaniHdz/DEVF-JS-Avanzado-Pokedex/tree/master" target="_blank">Github</a></li>
-                            <li><i class="bi bi-link-45deg"></i> <a href="https://pokeapi.co/" target="_blank">Pokeapi</a></li>
-                            <li><i class="bi bi-link-45deg"></i> <a href="https://www.pokemon.com/el/pokedex/" target="_blank">Pokedex</a></li>
+                            <li><i class="bi bi-github"></i> <a
+                                    href="https://github.com/iamDaniHdz/DEVF-JS-Avanzado-Pokedex/tree/master"
+                                    target="_blank">Github</a></li>
+                            <li><i class="bi bi-link-45deg"></i> <a href="https://pokeapi.co/"
+                                    target="_blank">Pokeapi</a></li>
+                            <li><i class="bi bi-link-45deg"></i> <a href="https://www.pokemon.com/el/pokedex/"
+                                    target="_blank">Pokedex</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-xs-12 links">
                         <h5 class="mt-lg-0 mt-sm-3">DEV.F</h5>
                         <ul class="m-0 p-0">
-                            <li><i class="bi bi-info-circle"></i> <a href="https://www.devf.la/" target="_blank">About us</a></li>
-                            <li><i class="bi bi-twitter"></i> <a href="https://twitter.com/devflatam" target="_blank">Twitter</a></li>
-                            <li><i class="bi bi-facebook"></i> <a href="https://www.facebook.com/devfla" target="_blank">Facebook</a></li>
-                            <li><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/devfla/" target="_blank">Instagram</a></li>
-                            <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/school/devf/" target="_blank">LinkedIn</a></li>
+                            <li><i class="bi bi-info-circle"></i> <a href="https://www.devf.la/" target="_blank">About
+                                    us</a></li>
+                            <li><i class="bi bi-twitter"></i> <a href="https://twitter.com/devflatam"
+                                    target="_blank">Twitter</a></li>
+                            <li><i class="bi bi-facebook"></i> <a href="https://www.facebook.com/devfla"
+                                    target="_blank">Facebook</a></li>
+                            <li><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/devfla/"
+                                    target="_blank">Instagram</a></li>
+                            <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/school/devf/"
+                                    target="_blank">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
@@ -186,9 +196,9 @@
     <!-- comprobacion de lazy loading -->
     <script>
         if ("loading" in HTMLImageElement.prototype) {
-          console.log("El navegador soporta `lazy-loading`...");
+            console.log("El navegador soporta `lazy-loading`...");
         } else {
-          console.log("`lazy-loading` no soportado...");
+            console.log("`lazy-loading` no soportado...");
         }
     </script>
 
