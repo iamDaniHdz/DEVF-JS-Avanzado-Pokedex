@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #f7eeeefe;
 }
 
@@ -23,7 +23,7 @@
 
 header {
     display: flex;
-    height: 100px;
+    /* height: 100px; */
     background-color: #d8240d;
     justify-content: center;
 }
@@ -146,7 +146,7 @@ header {
 
 footer {
     display: flex;
-    height: 100px;
+    /* height: 100px; */
     background-color: #d8240d;
 
 }
