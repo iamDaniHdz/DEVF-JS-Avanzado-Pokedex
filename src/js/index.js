@@ -62,7 +62,7 @@ const renderPokemonData = data => {
     renderPokemonStats(stats);
     renderPokemonAbilities(abilities);
     renderPokemonWeight(weight)
-    console.log(data); // eliminar despues del development
+    // console.log(data);
     pokeCard.style.background = typeColors[backgroundCard];
 }
 
@@ -120,7 +120,7 @@ const renderNotFound = () => {
 
     pokeTypes.innerHTML = `<div class="spinner-border text-light" role="status"> <span class="visually-hidden">Loading...</span></div>`;
     pokeAbilities.innerHTML = `<div class="spinner-border text-light" role="status"> <span class="visually-hidden">Loading...</span></div>`;
-    pokeWeight.innerHTML = `<div class="spinner-border text-light" role="status"> <span class="visually-hidden">Loading...</span></div>`; 
+    pokeWeight.innerHTML = `<div class="spinner-border text-light" role="status"> <span class="visually-hidden">Loading...</span></div>`;
     pokeStats.innerHTML = `<div class="d-flex justify-content-center"><div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div></div>`;
     pokeId.textContent = 'Intenta nuevamente';
 
